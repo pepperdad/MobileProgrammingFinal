@@ -22,10 +22,11 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="50dp"
         android:layout_marginBottom="50dp"
+        android:text="별자리를 뽑아 우주를 완성하세요!"
         android:textSize="20dp"
-        android:text="당신의 물고기를 뽑아보세요!"
         app:layout_constraintBottom_toTopOf="@+id/btn_gacha"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/iv_gachaimg" />
 
@@ -36,7 +37,7 @@
         android:layout_gravity="center|bottom"
         android:layout_margin="10dp"
         android:clickable="true"
-        android:text="물고기 뽑기"
+        android:text="별자리 뽑기"
         android:textColor="@color/white"
         app:fabSize="auto"
         app:icon="@drawable/outline_add_black_24dp"

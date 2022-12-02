@@ -1,15 +1,15 @@
 {
   "project_info": {
     "project_number": "287784510229",
-    "project_id": "madcamp4-1e04c",
-    "storage_bucket": "madcamp4-1e04c.appspot.com"
+    "project_id": "mpfinal-1e04c",
+    "storage_bucket": "mpfinal-1e04c.appspot.com"
   },
   "client": [
     {
       "client_info": {
         "mobilesdk_app_id": "1:287784510229:android:4fb7aa9f7012797afebf1c",
         "android_client_info": {
-          "package_name": "com.example.madcampweek4"
+          "package_name": "com.example.mpfinal"
         }
       },
       "oauth_client": [

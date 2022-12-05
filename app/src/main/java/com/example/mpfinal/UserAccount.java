@@ -36,7 +36,7 @@ public class UserAccount {
     }
 
     public void setPoints(int points) {
-        this.points = points;
+        this.points = 700;
     }
 
     public UserAccount() { }

@@ -45,7 +45,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="40dp"
-                android:text="CREATE NEW GROUP"
+                android:text="공동구매 만들기"
                 android:textColor="@color/colorPrimary"
                 android:textSize="20sp"
                 android:textStyle="bold"
@@ -67,7 +67,7 @@
                 <EditText
                     android:id="@+id/et_groupName"
                     style="@style/modifiedEditText"
-                    android:hint="Group Name"
+                    android:hint="이름"
                     android:inputType="textEmailAddress"
                     android:maxLines="1"
                     android:textSize="14sp" />
@@ -86,7 +86,7 @@
                 <EditText
                     android:id="@+id/et_groupInfo"
                     style="@style/modifiedEditText"
-                    android:hint="Group Information"
+                    android:hint="공동구매 상세 정보"
                     android:inputType="textEmailAddress"
                     android:maxLines="1"
                     android:textSize="14sp" />
@@ -99,7 +99,7 @@
                 android:layout_gravity="center"
                 android:layout_marginBottom="24dp"
                 android:layout_marginTop="20dp"
-                android:text="create"
+                android:text="만들기"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"

@@ -11,21 +11,14 @@
 
         <com.airbnb.lottie.LottieAnimationView
             android:layout_width="match_parent"
-            android:layout_height="405dp"
-            android:layout_above="@id/iv_underTheSea"
+            android:layout_height="match_parent"
             android:layout_alignParentEnd="true"
-            android:layout_marginBottom="-60dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="0dp"
+            android:layout_marginBottom="0dp"
             app:lottie_autoPlay="true"
             app:lottie_loop="true"
             app:lottie_rawRes="@raw/sea2" />
-
-        <ImageView
-            android:id="@+id/iv_underTheSea"
-            android:layout_width="match_parent"
-            android:layout_height="300dp"
-            android:layout_alignParentBottom="true"
-            android:background="#78d8df"
-            />
 
         <com.airbnb.lottie.LottieAnimationView
             android:layout_width="match_parent"
@@ -53,7 +46,7 @@
             android:layout_height="100dp"
             app:lottie_autoPlay="true"
             app:lottie_loop="true"
-            app:lottie_rawRes="@raw/powder"
+            app:lottie_rawRes="@raw/i_fruit"
             android:visibility="gone"
             />
 
@@ -68,7 +61,7 @@
             android:layout_alignParentBottom="true"
             app:lottie_autoPlay="true"
             app:lottie_loop="true"
-            app:lottie_rawRes="@raw/cutefish"
+            app:lottie_rawRes="@raw/i_vegetable"
             />
         <com.airbnb.lottie.LottieAnimationView
             android:id="@+id/iv_fishShark"
@@ -79,7 +72,7 @@
             android:layout_alignParentBottom="true"
             app:lottie_autoPlay="true"
             app:lottie_loop="true"
-            app:lottie_rawRes="@raw/fish_shark"
+            app:lottie_rawRes="@raw/i_socks"
             />
         <com.airbnb.lottie.LottieAnimationView
             android:id="@+id/iv_fishSpinJelly"
@@ -90,7 +83,7 @@
             android:layout_alignParentBottom="true"
             app:lottie_autoPlay="true"
             app:lottie_loop="true"
-            app:lottie_rawRes="@raw/fish_spin_jelly"
+            app:lottie_rawRes="@raw/i_googlecard"
             />
         <com.airbnb.lottie.LottieAnimationView
             android:id="@+id/iv_fishTurtle"
@@ -101,19 +94,19 @@
             android:layout_alignParentBottom="true"
             app:lottie_autoPlay="true"
             app:lottie_loop="true"
-            app:lottie_rawRes="@raw/fish_turtle"
+            app:lottie_rawRes="@raw/i_gift"
             />
+
         <com.airbnb.lottie.LottieAnimationView
             android:id="@+id/iv_fishWhale"
             android:layout_width="150dp"
             android:layout_height="150dp"
-            android:layout_marginBottom="20dp"
-            android:layout_centerHorizontal="true"
             android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="20dp"
             app:lottie_autoPlay="true"
             app:lottie_loop="true"
-            app:lottie_rawRes="@raw/fish_whale"
-            />
+            app:lottie_rawRes="@raw/i_giftcard" />
         <com.airbnb.lottie.LottieAnimationView
             android:id="@+id/iv_fishBalloon"
             android:layout_width="120dp"
@@ -123,7 +116,7 @@
             android:layout_alignParentBottom="true"
             app:lottie_autoPlay="true"
             app:lottie_loop="true"
-            app:lottie_rawRes="@raw/fish_balloon"
+            app:lottie_rawRes="@raw/i_bugger"
             />
         <com.airbnb.lottie.LottieAnimationView
             android:id="@+id/iv_fishBlue"
@@ -134,7 +127,7 @@
             android:layout_alignParentBottom="true"
             app:lottie_autoPlay="true"
             app:lottie_loop="true"
-            app:lottie_rawRes="@raw/fish_blue"
+            app:lottie_rawRes="@raw/i_cosmetic"
             />
 
 

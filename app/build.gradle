@@ -8,7 +8,7 @@ android {
     buildToolsVersion "30.0.3"
 
     defaultConfig {
-        applicationId "com.example.madcampweek4"
+        applicationId "com.example.mpfinal"
         minSdkVersion 21
         targetSdkVersion 31
         versionCode 1
@@ -64,7 +64,7 @@ dependencies {
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.4.0'
 
     // Import the BoM for the Firebase platform
-    implementation platform('com.google.firebase:firebase-bom:28.2.0')
+    implementation platform('com.google.firebase:firebase-bom:31.1.0')
 
     // Declare the dependency for the Firebase Authentication library
     // When using the BoM, you don't specify versions in Firebase library dependencies
@@ -92,4 +92,5 @@ dependencies {
 
     implementation 'com.sdsmdg.harjot:rotatingtext:1.0.2'
 
+    implementation 'com.google.firebase:firebase-analytics'
 }

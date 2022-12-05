@@ -59,7 +59,8 @@
                 android:layout_width="270dp"
                 android:layout_height="270dp"
                 android:layout_gravity="center"
-                android:layout_marginTop="10dp" />
+                android:layout_marginTop="10dp"
+                android:src="@drawable/myimg"/>
 
             <TextView
                 android:id="@+id/userName"
@@ -68,7 +69,7 @@
                 android:layout_gravity="center"
                 android:layout_marginTop="30dp"
                 android:layout_marginBottom="10dp"
-                android:text="name"
+                android:text="이름"
                 android:textStyle="bold"
                 android:textSize="20sp" />
 
@@ -123,7 +124,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:paddingTop="10dp"
-                android:text="CHANGE\nUSERNAME"
+                android:text="이름\n변경"
                 android:textAlignment="center"
                 android:textSize="12sp" />
 
@@ -151,7 +152,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:paddingTop="10dp"
-                android:text="CHANGE\nPASSWORD"
+                android:text="비밀번호\n변경"
                 android:textAlignment="center"
                 android:textSize="12sp"
                 tools:ignore="MissingConstraints" />
@@ -180,7 +181,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:paddingTop="10dp"
-                android:text="LOG OUT"
+                android:text="로그아웃"
                 android:textAlignment="center"
                 android:textSize="12sp"
                 tools:ignore="MissingConstraints" />
@@ -209,7 +210,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:paddingTop="10dp"
-                android:text="SIGN OUT"
+                android:text="회원탈퇴"
                 android:textAlignment="center"
                 android:textSize="12sp"
                 tools:ignore="MissingConstraints" />

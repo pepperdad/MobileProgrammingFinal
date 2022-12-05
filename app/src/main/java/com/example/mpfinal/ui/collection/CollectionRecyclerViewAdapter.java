@@ -55,30 +55,30 @@ public class CollectionRecyclerViewAdapter extends RecyclerView.Adapter<Collecti
     @Override
     public void onBindViewHolder(@NonNull @NotNull ViewHolder holder, int position) {
         //display_fish.get(position)
-        holder.tv_groupInfo.setText("Click button to add/remove from the aquarium");
+        holder.tv_groupInfo.setText("버튼을 누르면 트리에 나와요!");
         String[] names=Display_Fish.getNames();
 
         switch (position){
             case 1:
-                holder.img_fish.setAnimation(R.raw.fish_shark);
+                holder.img_fish.setAnimation(R.raw.i_socks);
                 break;
             case 2:
-                holder.img_fish.setAnimation(R.raw.fish_spin_jelly);
+                holder.img_fish.setAnimation(R.raw.i_googlecard);
                 break;
             case 3:
-                holder.img_fish.setAnimation(R.raw.fish_turtle);
+                holder.img_fish.setAnimation(R.raw.i_gift);
                 break;
             case 4:
-                holder.img_fish.setAnimation(R.raw.fish_whale);
+                holder.img_fish.setAnimation(R.raw.i_giftcard);
                 break;
             case 5:
-                holder.img_fish.setAnimation(R.raw.fish_balloon);
+                holder.img_fish.setAnimation(R.raw.i_bugger);
                 break;
             case 6:
-                holder.img_fish.setAnimation(R.raw.fish_blue);
+                holder.img_fish.setAnimation(R.raw.i_cosmetic);
                 break;
             case 0:
-                holder.img_fish.setAnimation(R.raw.cutefish);
+                holder.img_fish.setAnimation(R.raw.i_vegetable);
                 break;
         }
 
@@ -93,19 +93,19 @@ public class CollectionRecyclerViewAdapter extends RecyclerView.Adapter<Collecti
 
 
         if (display_fish.get(position)){
-            holder.fb_addfish.setText("REMOVE");
+            holder.fb_addfish.setText("제거하기");
             holder.fb_addfish.setIconResource(R.drawable.outline_remove_black_24dp);
         }else{
-            holder.fb_addfish.setText("ADD");
+            holder.fb_addfish.setText("추가하기");
             holder.fb_addfish.setIconResource(R.drawable.outline_add_black_24dp);
         }
 
         holder.fb_addfish.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if (holder.fb_addfish.getText().equals("ADD")){
+                if (holder.fb_addfish.getText().equals("추가하기")){
                     //Log.d("리사이클러", "추가"+position);
-                    holder.fb_addfish.setText("REMOVE");
+                    holder.fb_addfish.setText("제거하기");
                     holder.fb_addfish.setIconResource(R.drawable.outline_remove_black_24dp);
                     // position이랑 display_fish 순번, 위치 같음
                     ArrayList<Boolean> displayFish=Display_Fish.getOwn();
@@ -116,7 +116,7 @@ public class CollectionRecyclerViewAdapter extends RecyclerView.Adapter<Collecti
 
                 } else{
                     //Log.d("리사이클러", "삭제"+position);
-                    holder.fb_addfish.setText("ADD");
+                    holder.fb_addfish.setText("추가하기");
                     holder.fb_addfish.setIconResource(R.drawable.outline_add_black_24dp);
                     ArrayList<Boolean> displayFish=Display_Fish.getOwn();
                     displayFish.set(position, false);

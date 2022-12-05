@@ -17,8 +17,9 @@
 
         <TextView
             style="@style/headerTextPrimary"
+            android:layout_height="wrap_content"
             android:layout_marginTop="@dimen/loginViewsMargin"
-            android:text="REGISTER" />
+            android:text="회원가입" />
 
         <ImageView
             android:id="@+id/img_profile"
@@ -74,7 +75,7 @@
             style="@style/loginButton"
             android:id="@+id/btn_register"
             android:layout_gravity="center"
-            android:text="Register"
+            android:text="회원가입"
             android:layout_marginTop="@dimen/loginViewsMargin"/>
 
     </LinearLayout>

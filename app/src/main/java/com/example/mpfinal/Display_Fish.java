@@ -5,7 +5,7 @@ import java.util.ArrayList;
 public class Display_Fish {
     private static ArrayList<Boolean> own;
     private static int MAX_FISH = 7;
-    private static String[] names= new String[]{"Cutefish", "Shark", "SpinJelly", "Turtle", "Whale", "Balloon", "Blue"};;
+    private static String[] names= new String[]{"채소꾸러미", "랜덤박스", "구글카드", "랜덤상자", "문화상품권", "햄버거", "화장품"};;
 
     public static String[] getNames() {
         return names;

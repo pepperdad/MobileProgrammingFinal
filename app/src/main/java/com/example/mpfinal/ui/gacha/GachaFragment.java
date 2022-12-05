@@ -64,23 +64,23 @@ public class GachaFragment extends Fragment {
 
         textWrapper.setSize(30);
         Rotatable rotatable = new Rotatable(Color.parseColor("#539ae0"),1700,
-                "Jellyfish","Turtle","Shark","Whale","Blow","Tuna","Chub","Loach","Catfish","Salmon");
+                "햄버거", "화장품", "채소꾸러미", "구글카드", "문화상품권", "선물상자");
         rotatable.setSize(30);
         rotatable.setAnimationDuration(500);
 
-        textWrapper.setContent("300 coins for ?",rotatable);
+        textWrapper.setContent("300코인으로 선물뽑기",rotatable);
 
 
 
         btn_fishing.setOnLongClickListener(new View.OnLongClickListener() {
             @Override
             public boolean onLongClick(View v) {
-//                if(Login.getPoints()<300){
-//                    Toast.makeText(getContext(),"Not Enough Points",Toast.LENGTH_SHORT).show();
-//                    return false;
-//                }
-//                Login.setPoints(Login.getPoints()-300);
-//                tv_gachaPoint.setText(String.valueOf(Login.getPoints()));
+                if(Login.getPoints()<300){
+                    Toast.makeText(getContext(),"포인트가 부족합니다",Toast.LENGTH_SHORT).show();
+                    return false;
+                }
+                Login.setPoints(Login.getPoints()-300);
+                tv_gachaPoint.setText(String.valueOf(Login.getPoints()));
 
 
                 HashMap<String,Object> map = new HashMap<>();
@@ -128,7 +128,7 @@ public class GachaFragment extends Fragment {
         btn_fishing.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(getContext(),"Long Click for Gacha",Toast.LENGTH_SHORT).show();
+                Toast.makeText(getContext(),"뽑으려면 꾹 눌러주세요!",Toast.LENGTH_SHORT).show();
             }
         });
 
@@ -142,13 +142,13 @@ public class GachaFragment extends Fragment {
         Log.d(TAG, "num: "+String.valueOf(num)+" "+Fish.getOwn().toString());
         databaseRef.child("fish").setValue(Fish.getOwn());
 
-        if(num==0) lottie_fish.setAnimation(R.raw.cutefish);
-        else if(num==1) lottie_fish.setAnimation(R.raw.fish_shark);
-        else if(num==2) lottie_fish.setAnimation(R.raw.fish_spin_jelly);
-        else if(num==3) lottie_fish.setAnimation(R.raw.fish_turtle);
-        else if(num==4) lottie_fish.setAnimation(R.raw.fish_whale);
-        else if(num==5) lottie_fish.setAnimation(R.raw.fish_balloon);
-        else if(num==6) lottie_fish.setAnimation(R.raw.fish_blue);
+        if(num==0) lottie_fish.setAnimation(R.raw.i_vegetable);
+        else if(num==1) lottie_fish.setAnimation(R.raw.i_socks);
+        else if(num==2) lottie_fish.setAnimation(R.raw.i_googlecard);
+        else if(num==3) lottie_fish.setAnimation(R.raw.i_gift);
+        else if(num==4) lottie_fish.setAnimation(R.raw.i_giftcard);
+        else if(num==5) lottie_fish.setAnimation(R.raw.i_bugger);
+        else if(num==6) lottie_fish.setAnimation(R.raw.i_cosmetic);
 
     }
 }

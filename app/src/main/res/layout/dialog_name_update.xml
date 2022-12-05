@@ -35,7 +35,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="32dp"
-                android:text="ENTER NEW NAME"
+                android:text="이름 변경"
                 android:textColor="@color/colorPrimary"
                 android:textSize="20sp"
                 android:textStyle="bold"
@@ -55,7 +55,7 @@
                 <EditText
                     android:id="@+id/et_name"
                     style="@style/modifiedEditText"
-                    android:hint="Name"
+                    android:hint="이름"
                     android:inputType="textEmailAddress"
                     android:maxLines="1"
                     android:textSize="14sp" />
@@ -68,7 +68,7 @@
                 android:layout_gravity="center"
                 android:layout_marginTop="16dp"
                 android:layout_marginBottom="24dp"
-                android:text="update"
+                android:text="바꾸기"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"

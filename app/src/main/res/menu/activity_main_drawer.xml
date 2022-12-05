@@ -7,27 +7,27 @@
         <item
             android:id="@+id/nav_groups"
             android:icon="@drawable/ic_menu_groups"
-            android:title="Groups" />
+            android:title="공동구매 목록" />
         <item
             android:id="@+id/nav_search"
             android:icon="@drawable/ic_menu_search"
-            android:title="Search" />
+            android:title="찾아보기" />
         <item
             android:id="@+id/nav_calendar"
             android:icon="@drawable/ic_menu_calendar"
-            android:title="Calendar" />
+            android:title="달력" />
         <item
             android:id="@+id/nav_aquarium"
             android:icon="@drawable/ic_baseline_anchor_24"
-            android:title="Aquarium" />
+            android:title="트리" />
         <item
             android:id="@+id/nav_gacha"
             android:icon="@drawable/ic_baseline_local_play_24"
-            android:title="Gacha" />
+            android:title="뽑기" />
         <item
             android:id="@+id/nav_collection"
             android:icon="@drawable/ic_menu_collection"
-            android:title="Collection" />
+            android:title="장식품" />
     </group>
 
 </menu>

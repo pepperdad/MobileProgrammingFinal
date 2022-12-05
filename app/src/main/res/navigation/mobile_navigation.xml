@@ -8,37 +8,37 @@
     <fragment
         android:id="@+id/nav_groups"
         android:name="com.example.mpfinal.ui.group.GroupFragment"
-        android:label="Group"
+        android:label="공동구매 목록"
         tools:layout="@layout/fragment_group" />
 
     <fragment
         android:id="@+id/nav_search"
         android:name="com.example.mpfinal.ui.search.SearchFragment"
-        android:label="Search"
+        android:label="찾아보기"
         tools:layout="@layout/fragment_search" />
 
     <fragment
         android:id="@+id/nav_calendar"
         android:name="com.example.mpfinal.ui.calendar.CalendarFragment"
-        android:label="Calendar"
+        android:label="달력"
         tools:layout="@layout/fragment_calendar" />
 
     <fragment
         android:id="@+id/nav_aquarium"
         android:name="com.example.mpfinal.ui.aquarium.AquariumFragment"
-        android:label="Aquarium"
+        android:label="트리"
         tools:layout="@layout/fragment_aquarium" />
 
     <fragment
         android:id="@+id/nav_gacha"
         android:name="com.example.mpfinal.ui.gacha.GachaFragment"
-        android:label="Gacha"
+        android:label="뽑기"
         tools:layout="@layout/fragment_gacha" />
 
     <fragment
         android:id="@+id/nav_collection"
         android:name="com.example.mpfinal.ui.collection.CollectionFragment"
-        android:label="Collection"
+        android:label="장식품"
         tools:layout="@layout/fragment_collection" />
 
 </navigation>

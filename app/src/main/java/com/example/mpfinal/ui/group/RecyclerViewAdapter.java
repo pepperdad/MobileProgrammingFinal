@@ -66,9 +66,9 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
             String userId= FirebaseAuth.getInstance().getCurrentUser().getUid();
             if(map.get(userId)!=null){
                 Log.d("recycler", userId);
-                holder.fb_joinGroup.setText("unjoin");
-            }else holder.fb_joinGroup.setText("Join");
-        }else holder.fb_joinGroup.setText("Join");
+                holder.fb_joinGroup.setText("나가기");
+            }else holder.fb_joinGroup.setText("입장하기");
+        }else holder.fb_joinGroup.setText("입장하기");
 
         holder.fb_joinGroup.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -96,7 +96,7 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
                             HashMap<String,Object> map1 =new HashMap<>();
                             map1.put(userId,userId);
                             groupRef.updateChildren(map1);
-                            holder.fb_joinGroup.setText("Unjoin");
+                            holder.fb_joinGroup.setText("나가기");
 
                             Login.setGroupNum(Login.getGroupNum()+1);
                             DatabaseReference todayRef=database.getReference("MadCampWeek4/UserAccount/"+userId+"/posts/today");
@@ -104,13 +104,13 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
                             todayMap.put("groupNum",Login.getGroupNum());
                             todayRef.updateChildren(todayMap);
 
-                            Toast.makeText(v.getContext(),"Joined",Toast.LENGTH_SHORT).show();
+                            Toast.makeText(v.getContext(),"참여되었습니다",Toast.LENGTH_SHORT).show();
                         }
                         else{
                             userRef.child(groupId).removeValue();
                             groupRef.child(userId).removeValue();
 
-                            holder.fb_joinGroup.setText("Join");
+                            holder.fb_joinGroup.setText("입장하기");
 
                             Login.setGroupNum(Login.getGroupNum()-1);
                             DatabaseReference todayRef=database.getReference("MadCampWeek4/UserAccount/"+userId+"/posts/today");
@@ -118,7 +118,7 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
                             todayMap.put("groupNum",Login.getGroupNum());
                             todayRef.updateChildren(todayMap);
 
-                            Toast.makeText(v.getContext(),"Unjoined",Toast.LENGTH_SHORT).show();
+                            Toast.makeText(v.getContext(),"나기셨습니다",Toast.LENGTH_SHORT).show();
                         }
 
                     }

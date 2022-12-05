@@ -58,7 +58,7 @@ public class ProfileActivity extends AppCompatActivity {
         setContentView(R.layout.activity_profile);
 
         ActionBar ab = getSupportActionBar();
-        ab.setTitle(Html.fromHtml("<font color='#000000'>   My Profile</font>"));
+        ab.setTitle(Html.fromHtml("<font color='#000000'>   내 프로필</font>"));
         ab.setElevation(0);
         ab.setBackgroundDrawable(new ColorDrawable(getResources().getColor(R.color.white)));
         ab.setDisplayHomeAsUpEnabled(true);

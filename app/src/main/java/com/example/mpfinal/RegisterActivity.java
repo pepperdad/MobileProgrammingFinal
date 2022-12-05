@@ -54,6 +54,13 @@ public class RegisterActivity extends AppCompatActivity {
         ActionBar ab = getSupportActionBar();
         ab.hide();
 
+//        // Write a message to the database
+//        FirebaseDatabase database = FirebaseDatabase.getInstance();
+//        DatabaseReference myRef = database.getReference("message");
+//
+//        myRef.setValue("AAA!");
+
+
         storage=FirebaseStorage.getInstance();
         storageReference=storage.getReference();
 

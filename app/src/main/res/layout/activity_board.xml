@@ -28,7 +28,7 @@
         android:layout_gravity="center|bottom"
         android:layout_margin="16dp"
         android:clickable="true"
-        android:text="NEW POST"
+        android:text=" 글쓰기"
         android:textColor="@color/white"
         app:fabSize="auto"
         app:icon="@drawable/outline_add_black_24dp"

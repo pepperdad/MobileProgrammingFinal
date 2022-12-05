@@ -3,11 +3,13 @@
     "project_number": "433036536117",
     "project_id": "mpfin-d3774",
     "storage_bucket": "mpfin-d3774.appspot.com"
+
   },
   "client": [
     {
       "client_info": {
         "mobilesdk_app_id": "1:433036536117:android:caed40f354327959c4447c",
+
         "android_client_info": {
           "package_name": "com.example.mpfinal"
         }
@@ -15,12 +17,14 @@
       "oauth_client": [
         {
           "client_id": "433036536117-9sc0qj8e7k7266jqalt8l66s3hb3466i.apps.googleusercontent.com",
+
           "client_type": 3
         }
       ],
       "api_key": [
         {
           "current_key": "AIzaSyBar6Ps-gvNuJGEBvXhE8yLLHHFgKXtUR8"
+
         }
       ],
       "services": {
